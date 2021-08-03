@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<body background="images/d2.png">
+    <form method="POST" action="reg.php">
+        <div>
+            <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registration Form</h1><br><br>
+
+            <label for="firstname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name :</label>
+            <input type="text" id="firstname" name="fname" minlength="3" size=35 pattern="[A-Za-z]+" required><br><br>
+            <label for="secondname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Second Name :</label>
+            <input type="text" id="secondname" minlength="3" name="lname" size=35 pattern="[A-Za-z]+" required><br><br>
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender :
+                <input type="radio" name="gender" value="male" required>Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Other
+            </label><br><br>
+            <label for="dob">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date of Birth :</label>
+            <input type="date" id="dob" name="dob" min=1920-01-01 max=2020-01-01 required><br><br>
+            <label for ="address">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address :</label>
+            <input type="text" id="address" name="address" size=50 minlength="2" required><br><br>
+            <label for="state">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State :</label>
+            <select id="state" name="state" required>
+                <option value="">select</option>
+                <option value="ap">Andhra Pradesh</option>
+                <option value="ar">Arunachal Pradesh</option>
+                <option value="as">Assam</option>
+                <option value="br">Bihar</option>
+                <option value="ch">Chandigarh</option>
+                <option value="cg">Chhattisgarh</option>
+                <option value="dl">Delhi</option>
+                <option value="ga">Goa</option>
+                <option value="gj">Gujarat</option>
+                <option value="hr">Haryana</option>
+                <option value="hp">Himachal Pradesh</option>
+                <option value="jk">Jammu and Kashmir</option>
+                <option value="jh">jharkhand</option>
+                <option value="ka">Karnataka</option>
+                <option value="kl">kerala</option>
+                <option value="mp">Madhya Pradesh</option>
+                <option value="mh">Maharashtra</option>
+                <option value="mn">Manipur</option>
+                <option value="ml">Meghalaya</option>
+                <option value="mz">mizoram</option>
+                <option value="nl">Nagaland</option>
+                <option value="or">Orissa</option>
+                <option value="pb">Punjab</option>
+                <option value="py">Pondicherry</option>
+                <option value="rj">Rajasthan</option>
+                <option value="sk">sikkim</option>
+                <option value="tn">Tamil Nadu</option>
+                <option value="tr">Tripura</option>
+                <option value="uk">Uttarakhand</option>
+                <option value="up">Uttar Pradesh</option>
+            </select><br><br>
+            <label for="district">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;District :</label>
+            <input type="text" name="district" id="district" minlength=2 pattern="[A-Za-z]+" required><br><br>
+            <label for="pincode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pincode :</label>
+            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" size=4 minlength=6 maxlength=6 required><br><br>
+            <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail :</label>
+            <input type="email" id="email" name="email" size = 30 placeholder="xyz@email.com" required><br><br>
+            <label for="phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone :</label>
+            <input type="text" id="phone" pattern="[0-9]{10}" minlength=10 maxlength=10 required><br><br>
+            <label for="bloodgroup">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blood Group :</label>
+            <select id="bloodgroup" name="bloodgroup" required>
+                <option value="">select</option>
+                <option value="a+">A+</option>
+                <option value="a-">A-</option>
+                <option value="b+">B+</option>
+                <option value="b-">B-</option>
+                <option value="o+">O+</option>
+                <option value="o-">O-</option>
+                <option value="ab+">AB+</option>
+                <option value="ab-">AB-</option>
+            </select><br><br><br>
+            <label for="submit"></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" id="submit" value="Register" style="font-size:20px;">
+            <label for="reset"></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" id="reset" value="Clear All" style="font-size:20px;"><br><br>
+        </div>
+    </form>
+</body>
+</html>
